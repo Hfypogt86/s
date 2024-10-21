@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع شات أونلاين</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; }
+        .container { max-width: 600px; margin: auto; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        input, button { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ddd; }
+        button { background: #28a745; color: #fff; cursor: pointer; }
+        .chat { border: 1px solid #ddd; padding: 10px; height: 300px; overflow-y: scroll; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>موقع شات أونلاين</h1>
+        <div id="loginDiv">
+            <input type="text" id="username" placeholder="اسم المستخدم">
+            <input type="password" id="password" placeholder="كلمة المرور">
+            <button onclick="login()">تسجيل الدخول</button>
+            <button onclick="register()">إنشاء حساب</button>
+        </div>
+        <div id="chatDiv" style="display:none;">
+            <div class="chat" id="chat"></div>
+            <input type="text" id="message" placeholder="أدخل رسالتك">
+            <button onclick="sendMessage()">إرسال</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
